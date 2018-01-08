@@ -1,8 +1,122 @@
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0 140px;
+}
+
+.container {
+  max-width: 1160px;
+}
+
+.button {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #fb565a;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 /*HEADER*/
 
 .header-main {
   display: flex;
-
-  width: 
+  justify-content: space-between;
+  align-items: center;
   background-color: #eeeeee;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.header-cart {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 40px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+/*????*/
+/*.header-cart:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}*/
+
+
+/*MAIN*/
+
+/*Slider*/
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.slider-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Catalog*/
+.catalog {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.catalog div {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.catalog-image {
+  width: 300px;
+  height: 146px;
+}
+
+.catalog-sites .catalog-image {
+  background-color: #fb565a;
+}
+
+.catalog-apps .catalog-image {
+  background-color: #00ca74;
+}
+
+.catalog-presentations .catalog-image {
+  background-color: #efc849;
+}
+
+/*Catalog buttons*/
+
+.catalog-button {
+  width: 160px;
+}
+
+.catalog-apps .catalog-button {
+  background-color: #00ca74;
+}
+
+.catalog-presentations .catalog-button {
+  background-color: #efc849;
 }
