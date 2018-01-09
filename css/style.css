@@ -19,6 +19,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 /*HEADER*/
@@ -66,7 +67,7 @@ body {
 
 /*Slider*/
 
-.slider {
+.main-slider {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,12 +81,12 @@ body {
 }
 
 /*Catalog*/
-.catalog {
+.main-catalog {
   display: flex;
   justify-content: flex-start;
 }
 
-.catalog div {
+.main-catalog div {
   width: 300px;
   margin-right: 100px;
 }
@@ -93,18 +94,6 @@ body {
 .catalog-image {
   width: 300px;
   height: 146px;
-}
-
-.catalog-sites .catalog-image {
-  background-color: #fb565a;
-}
-
-.catalog-apps .catalog-image {
-  background-color: #00ca74;
-}
-
-.catalog-presentations .catalog-image {
-  background-color: #efc849;
 }
 
 /*Catalog buttons*/
@@ -120,3 +109,5 @@ body {
 .catalog-presentations .catalog-button {
   background-color: #efc849;
 }
+
+/*Description*/
