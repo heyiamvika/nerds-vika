@@ -6,6 +6,8 @@ body  {
   min-width: 1440px;
   margin: 0;
   padding: 0;
+  font-weight: 16px;
+  line-height: 24px;
 }
 
 .container {
@@ -22,6 +24,7 @@ body  {
   background-color: #fb565a;
   text-align: center;
   color: #ffffff;
+  line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
@@ -40,30 +43,38 @@ body  {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 160px;
+  min-height: 165px;
+}
+
+.header-logo {
+  width: 360px;
 }
 
 .header-site-nav {
   display: flex;
   justify-content: space-between;
-  min-width: 430px;
+  align-items: baseline;
+  width: 440px;
   margin: 0;
-  padding: 0;
+  padding: 15px 0 0 0;
   list-style-type: none;
   text-transform: uppercase;
+  line-height: 30px;
 }
 
 .header-user-nav {
   margin: 0;
-  padding: 0;
+  padding: 15px 0 0 0;
   list-style-type: none;
   text-transform: uppercase;
+  line-height: 30px;
 }
 
 .user-nav-cart {
   position: relative;
   min-width: 110px;
-  padding-left: 37px;
+  margin: 0;
+  padding: 0 0 0 37px;
 }
 
 .user-nav-cart::before {
