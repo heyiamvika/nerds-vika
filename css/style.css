@@ -1,11 +1,16 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+body  {
   min-width: 1440px;
   margin: 0;
-  padding: 0 140px;
+  padding: 0;
 }
 
 .container {
   max-width: 1160px;
+  margin: 0 auto;
 }
 
 .button {
@@ -25,43 +30,51 @@ body {
 /*HEADER*/
 
 .header-main {
+  width: 100%;
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #eeeeee;
+  min-height: 160px;
 }
 
-.header-nav {
+.header-site-nav {
   display: flex;
   justify-content: space-between;
-  min-width: 440px;
+  min-width: 430px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   text-transform: uppercase;
 }
 
-.header-cart {
-  position: relative;
+.header-user-nav {
   margin: 0;
-  padding: 0 0 0 40px;
-  list-style: none;
+  padding: 0;
+  list-style-type: none;
   text-transform: uppercase;
 }
 
-/*????*/
-/*.header-cart:before {
+.user-nav-cart {
+  position: relative;
+  min-width: 110px;
+  padding-left: 37px;
+}
+
+.user-nav-cart::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 15px;
   height: 15px;
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
-
+  background-color: red;
+}
 
 /*MAIN*/
 

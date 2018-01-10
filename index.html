@@ -4,91 +4,95 @@
   <head>
     <meta charset="utf-8" />
     <title>Nerds</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+
   </head>
 
   <body>
-    <div class="container">
 
-      <!-- HEADER -->
-      <header class="header-main">
-        <img src="img/nerds-logo.png" width="160px" height="65px" alt="Логотип студии" />
-        <!-- Fix it: svg instead of png -->
-        <ul class="header-nav">
-          <li>Студия</li>
-          <li>Клиенты</li>
-          <li>Магазин</li>
-          <li>Контакты</li>
-        </ul>
-        <ul class="header-cart">
-          <li>Корзина</li>
-        </ul>
-      </header>
+    <!-- HEADER -->
+    <header class="header-main">
+      <div class="container">
+        <div class="header-flex">
+          <img src="img/nerds-logo.png" width="160px" height="65px" alt="Лого студии" />
+          <ul class="header-site-nav">
+            <li>Студия</li>
+            <li>Клиенты</li>
+            <li>Магазин</li>
+            <li>Контакты</li>
+          </ul>
+          <ul class="header-user-nav">
+            <li class="user-nav-cart">Корзина</li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-      <!-- MAIN -->
-      <main class="index-main">
 
-        <!-- Slider -->
-        <section class="main-slider">
-          <div class="slider-paragraph">
-            <h1 class="visually-hidden">Преимущества студии</h1>
-            <p>Долго, дорого, скурпулезно.</p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            <a class="button" href="#">Узнать больше</a>
-          </div>
+    <!-- MAIN -->
+    <main class="index-main">
 
-          <div class="slider-image">
-            <img src="img/slide1.png" width="760px" height="431px" alt="Три айфона с приложениями студии" />
-          </div>
-        </section>
+      <!-- Slider -->
+      <section class="main-slider">
+        <div class="slider-paragraph">
+          <h1 class="visually-hidden">Преимущества студии</h1>
+          <p>Долго, дорого, скурпулезно.</p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+          <a class="button" href="#">Узнать больше</a>
+        </div>
 
-        <!-- Catalog -->
-        <section class="main-catalog">
-          <div class="catalog-sites">
-            <img src="img/sites.png" width="300px" height="146px" alt="Ноутбук" />
-            <h2>Веб-сайты</h2>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button catalog-button" href="#">Заказать</a>
-          </div>
-          <div class="catalog-apps">
-            <img src="img/apps.png" width="300px" height="146px" alt="Смартфоны" />
-            <h2>Приложения</h2>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button catalog-button" href="#">Заказать</a>
-          </div>
-          <div class="catalog-presentations">
-            <img src="img/presentations.png" width="300px" height="146px" alt="Экран со слайдом презентации" />
-            <h2>Презентации</h2>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button catalog-button" href="#">Заказать</a>
-          </div>
-        </section>
+        <div class="slider-image">
+          <img src="img/slide1.png" width="760px" height="431px" alt="Три айфона с приложениями студии" />
+        </div>
+      </section>
 
-        <section class="main-description">
-          <div class="description-about">
-            <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <!-- Catalog -->
+      <section class="main-catalog">
+        <div class="catalog-sites">
+          <img src="img/sites.png" width="300px" height="146px" alt="Ноутбук" />
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="button catalog-button" href="#">Заказать</a>
+        </div>
+        <div class="catalog-apps">
+          <img src="img/apps.png" width="300px" height="146px" alt="Смартфоны" />
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="button catalog-button" href="#">Заказать</a>
+        </div>
+        <div class="catalog-presentations">
+          <img src="img/presentations.png" width="300px" height="146px" alt="Экран со слайдом презентации" />
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="button catalog-button" href="#">Заказать</a>
+        </div>
+      </section>
 
-            <p>Выполняем заказы на разработку:</p>
-            <ul>
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-          </div>
-          <div class="description-data">
-            <img src="img/nerds-illustration.png" width="360px" height="208px" alt="Логотип компании на цветном фоне" />
-          </div>
-        </section>
+      <section class="main-description">
+        <div class="description-about">
+          <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 
-      </main>
+          <p>Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="description-data">
+          <img src="img/nerds-illustration.png" width="360px" height="208px" alt="Логотип компании на цветном фоне" />
+        </div>
+      </section>
 
-      <!-- FOOTER -->
-      <footer class="footer-main">
+    </main>
 
-      </footer>
+    <!-- FOOTER -->
+    <footer class="footer-main">
 
-    </div>
+    </footer>
+
   </body>
 
 </html>
