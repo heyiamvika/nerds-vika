@@ -171,9 +171,8 @@ body  {
   left: 0;
   width: 15px;
   height: 15px;
-  background-image: url("../img/cart-icon.svg");
+  background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;
-  background-color: red;
 }
 
 /*MAIN*/
@@ -415,4 +414,55 @@ body  {
 
 .projects img {
   opacity: 0.2;
+}
+
+/*Map*/
+
+.main-map {
+  width: 100%;
+  height: 416px;
+  margin-top: 80px;
+  padding: 0;
+  background-image: url("../img/map.png");
+  background-color: #eeeeee;
+}
+
+/*FOOTER*/
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 70px 0 70px 0;
+}
+
+.social {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 139px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.footer-promo p {
+  margin: 0;
+  padding: 0;
+}
+
+.promo-heading {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 700;
 }
