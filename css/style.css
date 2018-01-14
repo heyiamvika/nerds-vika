@@ -144,10 +144,12 @@ body  {
 .user-nav-cart::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 0;
   width: 15px;
   height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
   background-color: red;
 }
 
@@ -159,6 +161,7 @@ body  {
   background-color: #eeeeee;
   max-height: 423px;
   padding-top: 10px;
+  margin-bottom: 80px;
 }
 
 .slider {
@@ -239,19 +242,26 @@ body  {
 }
 
 /*Catalog*/
-.main-catalog {
+
+.catalog-service {
   display: flex;
   justify-content: flex-start;
 }
 
-.main-catalog div {
+.catalog-card {
   width: 300px;
   margin-right: 100px;
 }
 
-.catalog-image {
-  width: 300px;
-  height: 146px;
+.catalog-card h3 {
+  margin: 20px 0 15px 0;
+  padding: 0;
+}
+
+.catalog-card p {
+  max-width: 250px;
+  margin: 0 0 31px 0;
+  padding: 0;
 }
 
 /*Catalog buttons*/
