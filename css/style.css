@@ -63,6 +63,7 @@ body  {
   background-color: #fb565a;
   text-align: center;
   color: #ffffff;
+  font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
@@ -89,12 +90,6 @@ body  {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.description-heading /*For table*/ {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
 }
 
 /*Lines for sections on the page*/
@@ -355,6 +350,12 @@ body  {
 
 /*Description Table*/
 
+.description-heading /*For table*/ {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .description-table {
   width: 360px;
   margin: 30px 0 0 0;
@@ -419,12 +420,51 @@ body  {
 /*Map*/
 
 .main-map {
+  position: relative;
   width: 100%;
   height: 416px;
   margin-top: 80px;
   padding: 0;
   background-image: url("../img/map.png");
   background-color: #eeeeee;
+}
+
+.map-info {
+  position: absolute;
+  top: 55px;
+  left: 140px;
+  width: 319px;
+  height: 308px;
+  padding: 50px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.info-heading {
+  margin: 0 0 23px 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map-info p {
+  max-width: 210px;
+  margin: 0 0 18px 0;
+  padding: 0;
+  line-height: 18px;
+  color: #666666;
+}
+
+.map-info .button {
+  width: 220px;
+  margin-top: 35px;
+}
+
+.map-marker {
+  position: absolute;
+  top: 89px;
+  left: 820px;
 }
 
 /*FOOTER*/
@@ -464,5 +504,6 @@ body  {
 .promo-heading {
   font-size: 36px;
   line-height: 46px;
+  /*Different in psd - 36px*/
   font-weight: 700;
 }
