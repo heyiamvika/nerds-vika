@@ -162,6 +162,8 @@ body  {
 }
 
 .slider {
+  position: relative;
+  /*For slider switchers*/
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -190,6 +192,50 @@ body  {
 .slider-image {
   margin: 0 0 0 -120px;
   padding: 0;
+}
+
+.slider-3 .slider-image {
+  margin: 0 0 0 0;
+}
+
+.slider-2 {
+  display: none;
+}
+
+.slider-3 {
+  display: none;
+}
+
+/*Slider switchers*/
+
+.slider-controls {
+  position: absolute;
+  top: 300px;
+  left: 535px;
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.slider-controls div {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.controls-active:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+  background-color: inherit;
 }
 
 /*Catalog*/
