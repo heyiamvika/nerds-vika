@@ -91,6 +91,14 @@ body  {
   text-transform: uppercase;
 }
 
+.description-heading /*For table*/ {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+
 /*HEADER*/
 
 .header-main {
@@ -241,6 +249,13 @@ body  {
   background-color: inherit;
 }
 
+/*Lines for sections on the page*/
+
+.section .container {
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
+}
+
 /*Catalog*/
 
 .catalog-service {
@@ -280,7 +295,22 @@ body  {
 
 /*Description*/
 
-.description-list-heading {
+.description {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+
+.description-about {
+  max-width: 660px;
+}
+
+.description-data {
+  max-width: 360px;
+}
+
+.description-heading {
   text-transform: uppercase;
 }
 
@@ -288,4 +318,32 @@ body  {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/*Description Table*/
+
+.description-table {
+  width: 360px;
+  margin: 30px 0 0 0;
+  border-spacing: 0 25px;
+}
+
+.description-table caption {
+  margin-bottom: 30px;
+}
+
+.description-table th {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  font-weigth: 700;
+  text-align: left;
+  width: 120px;
+}
+
+.description-table td{
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  width: 120px;
 }
