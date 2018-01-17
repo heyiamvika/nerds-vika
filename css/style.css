@@ -61,7 +61,6 @@ body  {
   margin: 0;
   padding: 0;
   background-color: #fb565a;
-  text-align: center;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -506,4 +505,109 @@ body  {
   line-height: 46px;
   /*Different in psd - 36px*/
   font-weight: 700;
+}
+
+/*CATALOG*/
+
+/*Title*/
+
+.catalog-title {
+  margin: 0;
+  padding: 35px 0 69px 0;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+/*Catalog filter*/
+
+.catalog-sidebar {
+  max-width: 260px;
+}
+
+.sidebar legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.1;
+  text-transform: uppercase;
+}
+
+.sidebar-filter {
+
+}
+
+/*Range */
+
+.range-controls {
+  position: relative; /*For toggles*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 80px;
+  margin: 0 0 10px 0;
+  background-color: #eeeeee;
+  border-radius: 4px;
+}
+
+.controls-scale {
+  width: 219px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.controls-bar {
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  /*Re-learn box-shadow course!*/
+}
+
+.toggle span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ababab;
+}
+
+.toggle-min {
+  position: absolute;
+  top: 37%;
+  left: 20px;
+}
+
+.toggle-max {
+  position: absolute;
+  top: 37%;
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.price-controls span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 38px;
+  background-color: #eeeeee;
+  border-radius: 4px;
 }
