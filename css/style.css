@@ -524,16 +524,16 @@ body  {
   max-width: 260px;
 }
 
+.sidebar fieldset {
+
+}
+
 .sidebar legend {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.1;
   text-transform: uppercase;
-}
-
-.sidebar-filter {
-
 }
 
 /*Range */
@@ -563,6 +563,7 @@ body  {
 }
 
 .toggle {
+  /*Flex or inline-block?*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -572,6 +573,7 @@ body  {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   /*Re-learn box-shadow course!*/
+  cursor: pointer;
 }
 
 .toggle span {
@@ -596,18 +598,23 @@ body  {
 
 .price-controls {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
 }
 
-.price-controls span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.price-controls input {
   width: 80px;
   height: 38px;
   background-color: #eeeeee;
   border-radius: 4px;
+  text-align: center;
+  border: none;
+}
+
+/*Catalog radio buttons*/
+.catalog-radio {
+
 }
