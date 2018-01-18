@@ -41,39 +41,127 @@
       </section>
 
       <!-- Semantically incorrect to use aside -->
-      <section class="catalog-sidebar">
-        <form class="sidebar" method="get" action="#">
-          <fieldset class="sidebar-filter">
-            <legend>Стоимость:</legend>
-            <div class="filter-range">
-              <div class="range-controls">
-                <div class="controls-scale">
-                  <div class="controls-bar"></div>
+      <div class="container catalog-wrap">
+        <section class="catalog-sidebar">
+          <form class="sidebar" method="get" action="#">
+            <fieldset class="sidebar-filter">
+              <legend class="catalog-heading">Стоимость:</legend>
+              <div class="filter-range">
+                <div class="range-controls">
+                  <div class="controls-scale">
+                    <div class="controls-bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"><span></span></div>
+                  <div class="toggle toggle-max"><span></span></div>
                 </div>
-                <div class="toggle toggle-min"><span></span></div>
-                <div class="toggle toggle-max"><span></span></div>
+                <div class="price-controls">
+                  <label>от
+                <input type="text" name="price-low" value="0" />
+                </label>
+                  <label>до
+                <input type="text" name="price-high" value="15 000" />
+                </label>
+                </div>
               </div>
-              <div class="price-controls">
-                <label for="price-low">от</label>
-                <input type="text" id="price-low" name="price-low" value="0" />
-                <label for="price-till">до</label>
-                <input type="text" id="price-high" name="price-high" value="15 000" />
-              </div>
+            </fieldset>
+            <fieldset class="sidebar-radio">
+              <legend class="catalog-heading">Cетка:</legend>
+              <label>
+              <input type="radio" name="radio" value="adaptive" checked/>
+              Адаптивная
+            </label>
+              <label>
+              <input type="radio" name="radio" value="fixed" />
+              Фиксированная
+            </label>
+              <label>
+              <input type="radio" name="radip" value="responsive" />
+              Резиновая
+            </label>
+            </fieldset>
+            <fieldset class="sidebar-checkbox">
+              <legend class="catalog-heading">Особенности:</legend>
+              <label>
+              <input type="checkbox" name="checkbox" checked/>
+              Слайдер
+            </label>
+              <label>
+              <input type="checkbox" name="checkbox" />
+              Блок преимуществ
+            </label>
+              <label>
+              <input type="checkbox" name="checkbox" checked/>
+              Новости
+            </label>
+              <label>
+              <input type="checkbox" name="checkbox" />
+              Галерея
+            </label>
+              <label>
+              <input type="checkbox" name="checkbox" />
+              Корзина
+            </label>
+            </fieldset>
+            <button class="button sidebar-button">Показать</button>
+          </form>
+        </section>
+
+        <section class="catalog-catalog">
+          <div class="catalog-sort">
+            <h2 class="catalog-heading">Сортировать:</h2>
+            <ul class="sort-filter">
+              <li class="active">По цене</li>
+              <li>По типу</li>
+              <li>По названию</li>
+            </ul>
+            <div class="sort-buttons">
+              <button class="sort-button button-down"></button>
+              <button class="sort-button button-up"></button>
             </div>
-          </fieldset>
-          <fieldset class="sidebar-radio">
-            <legend>Cетка:</legend>
-            <!-- <input type="radio" name="radio" />
-            <input type="radio" name="radio" />
-            <input type="radio" name="radio" /> -->
+          </div>
 
-          </fieldset>
-          <fieldset class="sidebar-checkbox">
-            <legend>Особенности:</legend>
+          <ul class="catalog-images">
+            <li class="catalog-card">
+              <img src="img/browser.jpg" width="360px" height="40px" alt="Шапка карточки" />
+              <img src="img/img-sedona.jpg" width="360px" height="576px" alt="Макет Седона" />
+            </li>
+            <li class="catalog-card">
+              <img src="img/browser.jpg" width="360px" height="40px" alt="Шапка карточки" />
+              <img src="img/img-pink.jpg" width="360px" height="576px" alt="Макет Пинк" />
+            </li>
+            <li class="catalog-card">
+              <img src="img/browser.jpg" width="360px" height="40px" alt="Шапка карточки" />
+              <img src="img/img-barbershop.jpg" width="360px" height="576px" alt="Макет Барбершоп" />
+            </li>
+            <li class="catalog-card">
+              <img src="img/browser.jpg" width="360px" height="40px" alt="Шапка карточки" />
+              <img src="img/img-mishka.jpg" width="360px" height="576px" alt="Макет Мишка" />
+            </li>
+            <li class="catalog-card">
+              <img src="img/browser.jpg" width="360px" height="40px" alt="Шапка карточки" />
+              <img src="img/img-aplus.jpg" width="360px" height="576px" alt="Макет А плюс" />
+            </li>
+            <li class="catalog-card">
+              <img src="img/browser.jpg" width="360px" height="40px" alt="Шапка карточки" />
+              <img src="img/img-kvast.jpg" width="360px" height="576px" alt="Макет Кваст" />
+            </li>
+          </ul>
 
-          </fieldset>
-          <button class="button">Показать</button>
-        </form>
+        </section>
+      </div>
+
+      <!-- Map -->
+      <section class="main-map">
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <div class="map-info">
+          <h3 class="info-heading">NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button class="button">Напишите нам</button>
+        </div>
+        <div class="map-marker">
+          <img src="img/map-marker.png" width="" height="" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8" />
+        </div>
       </section>
 
     </main>

@@ -518,22 +518,41 @@ body  {
   text-align: center;
 }
 
-/*Catalog filter*/
+/*General catalog layout*/
 
-.catalog-sidebar {
-  max-width: 260px;
+.catalog-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
-.sidebar fieldset {
-
-}
-
-.sidebar legend {
+/*For smaller headings in catalog and sidebar*/
+.catalog-heading {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.1;
   text-transform: uppercase;
+}
+
+/*Catalog filter*/
+
+.catalog-sidebar {
+  max-width: 260px;
+  /*Neccecary for flexbox layout*/
+}
+
+.sidebar fieldset {
+  border: none;
+  line-height: 20px;
+}
+
+.sidebar label {
+  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+}
+
+.sidebar input {
+
 }
 
 /*Range */
@@ -615,6 +634,72 @@ body  {
 }
 
 /*Catalog radio buttons*/
-.catalog-radio {
+.sidebar-radio {
+  display: flex;
+}
 
+.sidebar-checkbox {
+  display: flex;
+}
+
+/*Filter button */
+.sidebar-button {
+  width: 260px;
+  color: #000000;
+  background-color: #eeeeee;
+  border: none;
+}
+
+/*Catalog*/
+
+.catalog-catalog {
+  width: 760px;
+}
+
+/*Catalog sort*/
+
+.catalog-sort {
+  display: flex;
+}
+
+.catalog-sort h2 {
+  flex-grow: 1;
+}
+
+.sort-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sort-filter li {
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sort-filter .active {
+  opacity: 1;
+}
+
+/*Catalog with images*/
+
+.catalog-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
