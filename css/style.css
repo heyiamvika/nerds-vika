@@ -513,7 +513,7 @@ body  {
 
 .catalog-title {
   margin: 0;
-  padding: 35px 0 69px 0;
+  padding: 33px 0 71px 0;
   background-color: #eeeeee;
   text-align: center;
 }
@@ -523,10 +523,13 @@ body  {
 .catalog-wrap {
   display: flex;
   justify-content: space-between;
+  padding: 58px 0 0 0;
 }
 
 /*For smaller headings in catalog and sidebar*/
 .catalog-heading {
+  margin: 0 0 45px 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -542,17 +545,20 @@ body  {
 }
 
 .sidebar fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
   line-height: 20px;
 }
 
 .sidebar label {
-  margin: 0 0 20px 0;
-  padding: 0 0 0 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar input {
-
+  margin: 0;
+  padding: 0;
 }
 
 /*Range */
@@ -564,7 +570,7 @@ body  {
   align-items: center;
   width: 260px;
   height: 80px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   background-color: #eeeeee;
   border-radius: 4px;
 }
@@ -625,6 +631,7 @@ body  {
 }
 
 .price-controls input {
+  margin: 0 0 0 8px;
   width: 80px;
   height: 38px;
   background-color: #eeeeee;
@@ -694,4 +701,10 @@ body  {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
