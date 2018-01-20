@@ -653,7 +653,7 @@ body  {
 /*Catalog*/
 
 .catalog-catalog {
-  width: 760px;
+  max-width: 760px;
 }
 
 /*Catalog sort*/
@@ -694,12 +694,4 @@ body  {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.catalog-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
 }
