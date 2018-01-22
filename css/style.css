@@ -528,7 +528,7 @@ body  {
 
 /*For smaller headings in catalog and sidebar*/
 .catalog-heading {
-  margin: 0 0 45px 0;
+  margin: 0;
   padding: 0;
   font-size: 18px;
   font-weight: 700;
@@ -683,26 +683,35 @@ body  {
 
 .catalog-catalog {
   max-width: 760px;
+  margin: 0;
+  padding: 0;
 }
 
 /*Catalog sort*/
 
 .catalog-sort {
   display: flex;
+  align-items: flex-start; /*Can't make elements in a straight line without it*/
 }
 
 .catalog-sort h2 {
   flex-grow: 1;
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+  line-height: 20px; /*In psd - 18px;*/
 }
 
 .sort-filter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 280px;
+  min-width: 270px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .sort-filter li {
@@ -712,6 +721,15 @@ body  {
 
 .sort-filter .active {
   opacity: 1;
+}
+
+/*Sort buttons*/
+
+.sort-buttons {
+  display: flex;
+  width: 43px; 
+  justify-content: space-between;
+  margin-left: auto;
 }
 
 /*Catalog with images*/
