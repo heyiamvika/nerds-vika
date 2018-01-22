@@ -563,7 +563,7 @@ a {
 
 .sidebar label {
   margin-bottom: 20px;
-  padding-left: 18px;
+  padding-left: 37px;
 }
 
 /*Range */
@@ -668,12 +668,66 @@ a {
   margin-bottom: 25px;
 }
 
+.sidebar-radio label {
+  position: relative;
+}
+
+.sidebar-radio label:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 4px solid #a6a6a6;
+  border-radius: 50%;
+}
+
+.sidebar-radio .radio-checked:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+}
+
 /*Catalog checkboxes*/
 
 .checkbox-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+}
+
+.sidebar-checkbox label {
+  position: relative;
+}
+
+.sidebar-checkbox label:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #a6a6a6;
+  border-radius: 3px;
+}
+
+.sidebar-checkbox .checkbox-checked:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 17px;
+  height: 7px;
+  border: 4px solid #a6a6a6;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
 }
 
 /*Filter button */
@@ -763,7 +817,7 @@ a {
   background-image: url("../img/icon-up-dir.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  /*If I want to change classes with JS in future, how is it save the picture in black and then change it through png?*/
+  /*If I want to change classes with JS in future, how is better: to save the picture in black and then change it through png?*/
 }
 
 /*Catalog with images*/
