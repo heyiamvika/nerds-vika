@@ -738,6 +738,34 @@ a {
   margin-left: auto;
 }
 
+.sort-button {
+  position: relative;
+  border: none;
+  width: 11px;
+  height: 10px;
+}
+
+.sort-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button-down {
+  background-image: url("../img/icon-down-dir.png");
+  /*SVG doesn't work at all both in Chrome and Safari. What am I doing wrong?*/
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.button-up {
+  background-image: url("../img/icon-up-dir.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*If I want to change classes with JS in future, how is it save the picture in black and then change it through png?*/
+}
+
 /*Catalog with images*/
 
 .catalog-images {
@@ -766,12 +794,12 @@ a {
 }
 
 .pagination li {
-  margin-right: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
+  margin-right: 11px;
   background-color: #eeeeee;
   border-radius: 3px;
 }
@@ -780,6 +808,11 @@ a {
   width: auto;
   padding: 0 78px 0 78px;
   text-transform: uppercase;
+}
+
+li.pagination-current {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
 }
 
 /*Map in catalog */
