@@ -551,17 +551,31 @@ body  {
   line-height: 20px;
 }
 
-.sidebar label {
-  margin: 0;
+.sidebar legend {
+  margin: 0 0 15px 0;
   padding: 0;
 }
 
-.sidebar input {
-  margin: 0;
-  padding: 0;
+.sidebar label {
+  margin-bottom: 20px;
+  padding-left: 18px;
 }
 
 /*Range */
+
+.sidebar-filter legend {
+  margin-bottom: 45px;
+}
+
+.sidebar-filter label {
+  margin: 0;
+  padding: 0;
+}
+
+.range-wrapper {
+  /*Div with the controls inside, need this margin because can't give margin to fieldset. Why?!*/
+  margin-bottom: 55px;
+}
 
 .range-controls {
   position: relative; /*For toggles*/
@@ -612,7 +626,7 @@ body  {
 .toggle-min {
   position: absolute;
   top: 37%;
-  left: 20px;
+  left: 18px;
 }
 
 .toggle-max {
@@ -641,12 +655,20 @@ body  {
 }
 
 /*Catalog radio buttons*/
-.sidebar-radio {
+
+.radio-wrapper {
+  /*Div with the controls inside, need this margin because can't give margin to fieldset. Why?!*/
   display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 }
 
-.sidebar-checkbox {
+/*Catalog checkboxes*/
+
+.checkbox-wrapper {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 /*Filter button */
