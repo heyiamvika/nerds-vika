@@ -692,6 +692,7 @@ body  {
 .catalog-sort {
   display: flex;
   align-items: flex-start; /*Can't make elements in a straight line without it*/
+  margin-bottom: 55px;
 }
 
 .catalog-sort h2 {
@@ -727,7 +728,7 @@ body  {
 
 .sort-buttons {
   display: flex;
-  width: 43px; 
+  width: 43px;
   justify-content: space-between;
   margin-left: auto;
 }
@@ -747,4 +748,5 @@ body  {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 33px;
 }
