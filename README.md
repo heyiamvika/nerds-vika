@@ -1,4 +1,4 @@
-My test project. Made for practice my skills in flexbox.
+My test project. Made to practice my flexbox skills.
 
 - Pages number: 2;
 - Layout: flexbox;
