@@ -75,6 +75,15 @@ a {
   border-radius: 4px;
 }
 
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: rgba(225,225, 225, 0.3);
+}
+
 /*Fonts*/
 
 .heading-big {
@@ -129,10 +138,35 @@ a {
   padding: 45px 0 0 0;
 }
 
+/*Navigation styles*/
+
+.header-flex li:hover {
+  color: #fb565a;
+}
+
+.header-flex li:active {
+  color: inherit;
+  opacity: 0.3;
+}
+
+.header-active {
+  border-bottom: 2px solid #fb565a;
+}
+
+/*Navigation logo*/
+
 .header-logo {
   max-width: 115px;
   padding-top: 5px;
   /*Why image is bigger than container and it works??*/
+}
+
+.header-logo img:hover {
+  opacity: 0.8;
+}
+
+.header-logo img:active {
+  opacity: 0.3;
 }
 
 .header-site-nav {
@@ -295,8 +329,26 @@ a {
   background-color: #00ca74;
 }
 
+.catalog-apps .catalog-button:hover {
+  background-color: #00bc6c;
+}
+
+.catalog-apps .catalog-button:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog-presentations .catalog-button {
   background-color: #efc849;
+}
+
+.catalog-presentations .catalog-button:hover {
+  background-color: #eab534;
+}
+
+.catalog-presentations .catalog-button:active {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Description*/
@@ -421,6 +473,14 @@ a {
   opacity: 0.2;
 }
 
+.projects img:hover {
+  opacity: 1;
+}
+
+.projects img:active {
+  opacity: 0.1;
+}
+
 /*Map*/
 
 .main-map {
@@ -498,6 +558,18 @@ a {
   height: 78px;
   background-color: #e1e1e1;
   border-radius: 50%;
+}
+
+.social li:hover {
+  background-color: #e74246;
+}
+
+.social li:active {
+  background-color: #d7373b;
+}
+
+.social li:active img {
+  opacity: 0.3;
 }
 
 .footer-promo p {
@@ -750,7 +822,7 @@ a {
 
 .catalog-sort {
   display: flex;
-  align-items: flex-start; /*Can't make elements in a straight line without it*/
+  align-items: center; /*Can't make elements in a straight line without it*/
   margin-bottom: 55px;
 }
 
