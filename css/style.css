@@ -225,6 +225,8 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+
+  width: 1160px;
 }
 
 .slider-paragraph {
@@ -254,14 +256,6 @@ a {
 
 .slider-3 .slider-image {
   margin: 0 0 0 0;
-}
-
-.slider-2 {
-  display: none;
-}
-
-.slider-3 {
-  display: none;
 }
 
 /*Slider switchers*/
@@ -294,6 +288,20 @@ a {
   border: 2px solid #c1c1c1;
   border-radius: 50%;
   background-color: inherit;
+}
+
+/*Slider interactivity*/
+
+.slider-1 {
+  display: block;
+}
+
+.slider-2 {
+  display: none;
+}
+
+.slider-3 {
+  display: none;
 }
 
 /*Catalog*/
