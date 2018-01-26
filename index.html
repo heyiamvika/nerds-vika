@@ -16,16 +16,16 @@
       <div class="container">
         <nav class="header-flex">
           <div class="header-logo">
-            <img src="img/nerds-logo.png" width="160px" height="65px" alt="Лого студии" />
+            <a href="#"></a><img src="img/nerds-logo.png" width="160px" height="65px" alt="Лого студии" /></a>
           </div>
           <ul class="header-site-nav">
-            <li class="header-active">Студия</li>
-            <li>Клиенты</li>
+            <li class="header-active"><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
-            <li>Контакты</li>
+            <li><a href="#">Контакты</a></li>
           </ul>
           <ul class="header-user-nav">
-            <li class="user-nav-cart">Корзина</li>
+            <li class="user-nav-cart"><a href="#">Корзина</a></li>
           </ul>
         </nav>
       </div>
@@ -214,6 +214,31 @@
         </div>
       </div>
     </footer>
+
+    <!-- POPUP -->
+    <div class="container">
+      <form class="feedback-popup">
+        <fieldset>
+          <legend class="heading-medium">Напишите нам</legend>
+          <div class="popup-text">
+            <label>
+        Ваше имя:
+        <input type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required/>
+      </label>
+            <label>
+        Ваш e-mail:
+        <input type="text" name="user-name" placeholder="Для отправки ответа" required/>
+      </label>
+          </div>
+          <label>
+          Текст письма:
+        <textarea>В свободной форме</textarea>
+      </label>
+        </fieldset>
+        <button type="submit" class="button">Отправить</button>
+        <button type="button" class="button-close" aria-label="Закрыть форму"></button>
+      </form>
+    </div>
 
   </body>
 
