@@ -151,6 +151,7 @@ a {
 
 .header-active {
   border-bottom: 2px solid #fb565a;
+  padding-bottom: 5px;
 }
 
 /*Navigation logo*/
@@ -1009,7 +1010,7 @@ a {
 }
 
 .card-hover p {
-  max-width: 230px;
+  max-width: 210px;
   margin: 0;
   padding: 0 0 28px 0;
   color: #666666;

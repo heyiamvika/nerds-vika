@@ -43,7 +43,7 @@
       <!-- Semantically incorrect to use aside -->
       <div class="container catalog-wrap">
         <section class="catalog-sidebar">
-          <form class="sidebar" method="get" action="#">
+          <form class="sidebar" method="get" action="#" id="sidebar">
             <fieldset class="sidebar-filter">
               <legend class="catalog-heading">Стоимость:</legend>
               <div class="range-wrapper">
@@ -105,7 +105,7 @@
                 </label>
               </div>
             </fieldset>
-            <button class="button sidebar-button">Показать</button>
+            <button type="submit" form="sidebar" value="Submit" class="button sidebar-button">Показать</button>
           </form>
         </section>
 
