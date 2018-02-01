@@ -1011,6 +1011,8 @@ a {
 
 .card-hover p {
   max-width: 210px;
+  max-height: 70px;
+  overflow: scroll;
   margin: 0;
   padding: 0 0 28px 0;
   color: #666666;
